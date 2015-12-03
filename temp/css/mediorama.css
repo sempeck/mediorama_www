@@ -1,0 +1,117 @@
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #98366a;
+  
+}
+body {
+ font-family: 'gesta';
+ font-weight: 400;
+ color: #fff;
+}
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+img {
+	width: 80%;
+	float: right;
+	}
+
+a
+ {
+  color: #fff;
+}
+
+a:focus,
+a:hover{
+	color: #4c345f;
+	text-decoration: none;
+	}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 35px;
+}
+
+.lead {
+	/*display:none;*/
+	opacity: 0;
+
+	}
+
+/*
+ * Affix and center
+ */
+
+
+@media (max-width: 767px) {
+	   .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  img {
+	width: 60%;
+	float: right;
+	padding-top:35px;
+	} 
+	
+  p {
+		margin-bottom: 5px!important;
+		}
+	}
+
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .mastfoot {
+    position: fixed;
+     }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
