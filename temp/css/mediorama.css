@@ -39,9 +39,10 @@ body {
 }
 
 img {
-	width: 80%;
+	width: 120px;
 	float: right;
 	}
+
 
 a
  {
@@ -54,6 +55,9 @@ a:hover{
 	text-decoration: none;
 	}
 
+#a1 {
+	padding-top: 35px;
+	}
 
 /*
  * Cover
@@ -79,15 +83,25 @@ a:hover{
 @media (max-width: 767px) {
 	   .site-wrapper-inner {
     vertical-align: middle;
-  }
-  img {
-	width: 60%;
-	float: right;
-	padding-top:35px;
-	} 
 	
-  p {
-		margin-bottom: 5px!important;
+  }
+
+img {
+	width: 60px;
+	float: none;	
+	}
+	
+.logo {
+	text-align:center;
+	
+	}	
+	
+	#a1 {
+	padding-top: 10px;
+	}
+	
+ .lead {
+	  text-align:center;
 		}
 	}
 
@@ -101,6 +115,7 @@ a:hover{
   .site-wrapper-inner {
     vertical-align: middle;
   }
+  
   /* Handle the widths */
 
   .cover-container {
