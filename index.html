@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Skład książek i magazynów, produkcja multimediów, aplikacje mobilne.">
@@ -24,7 +25,7 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-
+	
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	
 	<script type="text/javascript">
@@ -33,7 +34,8 @@
 				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
 				anchors: ['intro', 'opis', 'projekty', 'kontakt'],
 				menu: '#menu',
-				scrollingSpeed: 1000
+				scrollingSpeed: 1000,
+				slidesNavigation: true
 			});
 
 		});
@@ -59,30 +61,33 @@
 <!--intro -->
 	<div class="section" id="section0">
 		<div class="slide">
-          <h1>fullPage.js</h1>
-		  <h2>Create Beautiful Fullscreen Scrolling Websites</h2>
+          <h1>witaj</h1>
+          <p>Nie wiadomo tylko jak ten świat mamy zwojować, ale pracujemy nad tym. Może to nie być takie oczywiste, ale jest szansa, że sobie z tym poradzimy.</p>
 		</div>
 	</div>
     
 <!--opis -->
 	<div class="section" id="section1">
 		<div class="slide">
-        
+         
 			<h1>Example</h1>
-			<p>HTML markup example to define 4 sections.</p>
+            <h2>to jest strona multimedialnego studia Mediorama</h2>
+			 <p>Nie wiadomo tylko jak ten świat mamy zwojować, ale pracujemy nad tym. Może to nie być takie oczywiste, ale jest szansa, że sobie z tym poradzimy.</p>
+		
+        </div>
 		</div>
-	</div>
+
     
     
 <!--projekty -->   
 	<div class="section" id="section2">
-	    <div class="slide">
+	    <div class="slide"  data-anchor="slide1">
 			<div class="intro">
 				<h1>Create Sliders</h1>
 				<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
 			</div>
 		</div>
-	    <div class="slide">
+	    <div class="slide" data-anchor="slide2">
 			<div class="intro">
 				<h1>Simple</h1>
 				<p>Easy to use. Configurable and customizable.</p>

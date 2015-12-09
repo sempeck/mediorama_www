@@ -37,10 +37,11 @@ caption,th {
  * --------------------------------------- */
 
 body{
-	font-family: "museo-sans",sans-serif;
+	font-family: "museo-slab", sans-serif;
 	font-weight:100;
 	color: #333;
 	color: rgba(0,0,0,0.5);
+	
 }
 .wrap{
 	margin-left: auto;
@@ -51,7 +52,8 @@ body{
 
 .section{
 	text-align:center;
-	border: solid 50px;
+	border-style: solid;
+	border-width: 50px 50px 45px 50px;
 	border-color: #fff;
 	
 }
@@ -63,38 +65,51 @@ body{
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
-    font-size: 100%;
+    font-size: 62.5%;
     margin:0;
     padding:0;
     color:#444;
 }
 
+  
 h1 {
-	font-family: "museo-sans",sans-serif;
+	font-family: "museo-sans", sans-serif;
 	font-weight:100;
-	font-size: 6em;
+	font-size: 4em;
 	text-transform: uppercase;
+	color:#fff;
 	}
 	
 h2 {
-	font-family: "museo-slab",serif;
+	font-family: "museo-slab", serif;
 	font-weight:700;
+	font-size: 1.5em;
+	color:#fff;
 	}
 
 p{
-	font-size: 2em;
+	font-family: "museo-sans", sans-serif;
+	font-weight:100;
+	font-size: 1em;
+	color:#fff;
 }
-.intro p{
+
+/*.intro {
 	width: 50%;
 	margin: 0 auto;
-	font-size: 1.5em;
-}
+    text-align: left;
+}*/
 
 q:before,q:after {
     content:'';
 }
 abbr,acronym { border: 0;
 }
+
+.jasny {}
+
+.ciemny{}
+
 
 
 /* Menu
@@ -136,6 +151,7 @@ abbr,acronym { border: 0;
 #menu li a{
 	text-decoration:none;
 	color: #000;
+	font-size: 0.8em;
 	text-transform: uppercase;
 }
 #menu li.active a:hover{
@@ -168,10 +184,11 @@ abbr,acronym { border: 0;
 
 /* Strony
 		 * --------------------------------------- */
-		#section0 img,
-		#section1 img{
-			margin: 20px 0 0 0;
+		#section0{
+background: linear-gradient(to bottom right,#4c355f,#98366a);
+		opacity: 1;
 		}
+	
 		#section2 img{
 			margin: 20px 0 0 52px;
 		}
@@ -181,8 +198,14 @@ abbr,acronym { border: 0;
 			margin-left: -420px;
 		}
 		.intro p{
-			width: 50%;
-			margin: 0 auto;
-			font-size: 1.5em;
+	width: 50%;
+	margin: 0 auto;
 		}
+	
+	/* kropki
+	* --------------------------------------- */
+	.fp-slidesNav.bottom{
+		bottom: 25px;
+	}
+
 	
