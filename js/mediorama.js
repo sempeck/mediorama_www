@@ -1,6 +1,7 @@
 $(document).ready(function() {
 		  
-		 "use strict";
+		   "use strict";
+		
            createFullpage();
 	      
 	   function createFullpage() {
@@ -17,19 +18,20 @@ $(document).ready(function() {
    	var v = false;  
 	  
         $('img').click(function(){
-			slides = $("#fullpage").detach();
-		  $('#pro').load('portfolio.html');	  
-	  $("body").css("overflow", "scroll");
-	    v = true;
+		  slides = $("#fullpage").detach();
+	       $("#projekt").load("portfolio.html");	  
+	       $("body").css("overflow", "scroll");
+	          v = true;
 		});
     
 	
 	    $('.navbar').click(function(){
 			if (v) { 
-     $("#pro").empty(); 
-	$("body").prepend(slides);
-	$("body").css("overflow", "hidden");
-	 }});
+              $("#projekt").empty(); 
+	         $("body").prepend(slides);
+	          $("body").css("overflow", "hidden");
+			  v = false;
+	     }});
 	
 		  
 }); 
