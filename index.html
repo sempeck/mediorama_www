@@ -8,63 +8,58 @@
 <meta name="author" content="Mediorama">
 <link rel="icon" href="img/favicon.ico">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Mediorama</title>
+
 <script src="https://use.typekit.net/uip5szk.js"></script>
 <script>try{Typekit.load({ async: true });}catch(e){}</script>
-<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-<link rel="stylesheet" type="text/css" href="css/mediorama.css" />
-<!--[if IE]>
-		<script type="text/javascript">
-			 var console = { log: function() {} };
-		</script>
-	<![endif]-->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-<script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#ccddff'],
-				anchors: ['intro', 'opis', 'projekty', 'kontakt'],
-				menu: '#menu',
-				scrollingSpeed: 1000,
-				slidesNavigation: true
-			});
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mediorama.js"></script>
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 
-		});
-	</script>
-    <script src="js/bootstrap.min.js"></script>
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="css/mediorama.css" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
+<!--[if IE]>
+		<script type="text/javascript">var console = { log: function() {} };</script>
+	<![endif]-->  
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
 
+
+<body>
 <!--menu-->
-      <nav class="navbar navbar-default navbar-fixed-top col-md-12">
+     <nav class="navbar navbar-default navbar-fixed-top col-md-12">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-            <a class="navbar-brand" href="http://mediorama.pl"><img src="img/mediorama_logo.svg" id="logo" alt="Mediorama"></a></div>
+            <a class="navbar-brand" href="/"><img src="img/mediorama_logo.svg" id="logo" alt="Mediorama"></a></div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="topFixedNavbar1">
           
              <ul class="nav navbar-nav navbar-right">
+ 
               <li data-menuanchor="opis"><a href="#opis">O nas</a></li>
-              <li data-menuanchor="projekty" class="dropdown"><a href="#projekty" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projekty<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">TamTam</a></li>
-                  <li><a href="#">Kiwi</a></li>
-                  <li><a href="#">NG Odkrywca</a></li>
-                <!--  <li role="separator" class="divider"></li>
-                  <li><a href="#">Separated link</a></li>-->
+              <li data-menuanchor="projekty"><a href="#projekty">Projekty</a></li>
+              
+             <!-- <li data-menuanchor="projekty" class="dropdown"><a href="#projekty" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projekty<span class="caret"></span></a>
+                   <ul class="dropdown-menu">
+                  <li><a href="#projekty/tamtam">TamTam</a></li>
+                  <li><a href="#projekty/kiwi">Kiwi</a></li>
+                  <li><a href="#projekty/ngodkrywca">NG Odkrywca</a></li>
+                   <li><a href="#projekty/dtp">Grafika i DTP</a></li>
+               <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
                 </ul>
-              </li>
+              </li>-->
               <li data-menuanchor="kontakt"><a href="#kontakt">Kontakt</a></li>
             </ul>
           </div>
@@ -72,87 +67,93 @@
         </div>
         <!-- /.container-fluid -->
       </nav>
+<!-- koniec menu-->
 
 
-<!--<div id="header">
-   <a href="http://mediorama.pl"><img src="img/mediorama_logo.svg" id="logo" alt="Mediorama"></a>
-<ul id="menu"> 
- <li data-menuanchor="kontakt"><a href="#kontakt">Kontakt</a></li>
-    <li data-menuanchor="projekty"><a href="#projekty">Portfolio</a></li>
-    <li data-menuanchor="opis"><a href="#opis">O nas</a></li>
-   <li data-menuanchor="intro"><a href="#intro">Intro</a></li>
-</ul> 
-</div>-->
 
+<div id="pro">
 <div id="fullpage">
 
 <!--intro -->
-	<div class="section" id="section0">
-		<div class="slide">
+	<div class="section" id="section1">
+      <div class="slide">
           <h1>witaj</h1>
           <p>Nie wiadomo tylko jak ten świat mamy zwojować, ale pracujemy nad tym. Może to nie być takie oczywiste, ale jest szansa, że sobie z tym poradzimy.</p>
-		</div>
+  </div>
 	</div>
     
 <!--opis -->
-	<div class="section" id="section1">
+	<div class="section projekt" id="section2">
 		<div class="slide">
-         
-			<h1>Example</h1>
+			<h1>Wstępniak</h1>
             <h2>to jest strona multimedialnego studia Mediorama</h2>
-			 <p>Nie wiadomo tylko jak ten świat mamy zwojować, ale pracujemy nad tym. Może to nie być takie oczywiste, ale jest szansa, że sobie z tym poradzimy.</p>
-		
+			 <p>Nie wiadomo tylko jak ten świat mamy zwojować, ale pracujemy nad tym. Może to nie być takie oczywiste, ale jest szansa, że sobie z tym poradzimy.
+            </p>	
         </div>
 		</div>
 
     
     
 <!--projekty -->   
-	<div class="section" id="section2">
-	    <div class="slide"  data-anchor="slide1">
-			<div class="intro">
-				<h1>Create Sliders</h1>
-				<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
-			</div>
+	<div class="section projekt" id="section3">
+    
+	    <div class="slide" data-anchor="tamtam" id="tamtam"> 
+             <h1>Tamtam</h1>           
+            <img src="img/test_tablet2.png">
+            <p>Multimedialny magazyn podróżniczy na iPady.</p>
 		</div>
-	    <div class="slide" data-anchor="slide2">
-			<div class="intro">
-				<h1>Simple</h1>
-				<p>Easy to use. Configurable and customizable.</p>
-			</div>
+        
+	    <div class="slide" data-anchor="kiwi">
+        <h1>Kiwi. Zupełnie Nowa Zelandia</h1>       
+          <img src="img/test_tablet2.png">
+            <p>Multimedialna książka podróżnicza na tablety.</p>
+            </div>           
+        
+         <div class="slide" data-anchor="ngodkrywca">
+         <h1>National Geographic Odkrywca</h1>
+           <img src="img/test_tablet2.png">
+            <p>Tabletowa wersja edukacyjnego magazynu dla dzieci.</p>         
 		</div>
-	    <div class="slide">
-			<div class="intro">
-				<h1>Cool</h1>
-				<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
-			</div>
+        
+           <div class="slide" data-anchor="dtp">
+         <h1>Grafika</h1>
+         <img src="img/test_tablet2.png">
+            <p>Skład i łamanie książek.</p>
 		</div>
-	    <div class="slide">
-			<div class="intro">
-				<h1>Compatible</h1>
-				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
-			</div>
-		</div>
+        
 	</div>
     
     
 <!--kontakt -->
 	
-	<div class="section" id="section3">
-	<div class="container">
+	<div class="section" id="section4">
+	
     	<div class="slide">
-			<h1>Working On Tablets</h1>
-			<p>
-				Designed to fit to different screen sizes as well as tablet and mobile devices.
-				<br />
-			</p>
-		</div>
-      </div>
+          <div class="row"> 
+            <div class="col-xs-12"><h1>Kontakt</h1></div>           
+          </div>
+          
+          <div class="row"> 
+            <div class="col-xs-12">
+            <div class=" tablet">
+            <img src="img/test_foto.jpg"></div>           
+          </div></div>
+          
+          <div class="row"> 
+            <div class="col-xs-12"><p>Mediorama...</p>
+            </div>           
+          </div>
+	  </div>
 	</div>
     
     
     
+    
 </div>
+</div>
+    <!-- Stopka -->
 
+<nav class="navbar navbar-default navbar-fixed-bottom">
+</nav>
 </body>
 </html>

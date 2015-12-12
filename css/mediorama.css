@@ -47,10 +47,11 @@ caption,th {
 	text-align:center;
 	border-style: solid;
 	border-width: 50px 50px 45px 50px;
-	border-color: #fff;
-	
+	border-color: #fff;	
+
 }
 
+/*body {overflow: scroll!important;}*/
 
 
 /* Tekst
@@ -111,28 +112,76 @@ abbr,acronym { border: 0;
 
 /* Strony
 		 * --------------------------------------- */
-		#section0{
-background: linear-gradient(to bottom right,#4c355f,#98366a);
+		#section1{
+        background: linear-gradient(to bottom right,#4c355f,#98366a);
 		opacity: 1;
 		}
 	
-		#section2 img{
-			margin: 20px 0 0 52px;
+		#section2 {
+	background: linear-gradient(to bottom right,#5eb17e,#62cb8a);
+		opacity: 1;
 		}
-		#section3 img{
-			bottom: 0px;
-			position: absolute;
-			margin-left: -420px;
+	
+		#section3 {
+        background: linear-gradient(to bottom right,#bf5b5e,#e8896d);
+		opacity: 1;
 		}
+		
+		#section3 img {
+			width: 50%;
+			}
+			
+				#section4 img {
+			width: 100%;
+			
+			}
+			
+		#section4 {
+	    /*background: linear-gradient(to bottom right,#5d92b1,#60a4ca);*/
+		background: linear-gradient(to bottom right,#653031,#b0413f);
+		opacity: 1;
+		
+		}
+	
+	
 		.intro p{
-	width: 50%;
-	margin: 0 auto;
+	       width: 50%;
+	       margin: 0 auto;
 		}
+		
+		
+	.tablet {
+	    margin-left: auto;
+	    margin-right: auto;
+		width: 50%;
+	
+	    border-style: solid;
+	    border-width: 2em;
+	    border-radius: 1em;
+	    border-color: #fff;
+		box-shadow: 1px 1px 20px #000;
+		-moz-box-shadow: 1px 1px 20px #000;
+        -webkit-box-shadow: 1px 1px 20px #000;
+	
+	}
+	
+	.tablet img {
+
+/*  -moz-box-shadow: inset 0 0 15px #888;
+       -webkit-box-shadow: inset 0 0 15px #888;
+      box-shadow: inner 0 0 15px #888;
+    border: 1px solid #aaa;*/
+	
+	border: 2px;
+    border-image: -webkit-linear-gradient(left, #ddd, #aaa);
+    border-image-slice: 3;
+		}
+		
 	
 	/* kropki
 	* --------------------------------------- */
 	.fp-slidesNav.bottom{
-		bottom: 25px;
+		bottom: 0px;
 	}
 
 	
