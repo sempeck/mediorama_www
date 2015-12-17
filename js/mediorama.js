@@ -19,19 +19,23 @@ $(document).ready(function() {
 	  
         $('img').click(function(){
 		  slides = $("#fullpage").detach();
-	       $("#projekt").load("portfolio.html");	  
-	       $("body").css("overflow", "scroll");
-	          v = true;
+	      $("#projekt").load("portfolio2.html");	
+    	  $.fn.fullpage.destroy('all');  
+	      //   $("body").css("overflow", "scroll");
+	          v = true; 
 		});
     
 	
-	    $('.navbar').click(function(){
+	
+	    $('.nav').click(function(){
 			if (v) { 
               $("#projekt").empty(); 
-	         $("body").prepend(slides);
-	          $("body").css("overflow", "hidden");
+			   // $.fn.fullpage.reBuild();
+	         $("body").prepend(slides);		 
+			// $("body").css("overflow", "hidden");
 			  v = false;
-	     }});
+			  createFullpage();
+			}});
 	
 		  
 }); 

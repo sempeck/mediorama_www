@@ -20,7 +20,7 @@ html.fp-enabled,
 
     /* Touch detection for Windows 8 */
     -ms-touch-action: none;
-
+a
     /* IE 11 on Windows Phone 8.1*/
     touch-action: none;
 }
@@ -32,7 +32,7 @@ html.fp-enabled,
 }
 .fp-slide {
     float: left;
-}
+}a
 .fp-slide, .fp-slidesContainer {
     height: 100%;
     display: block;
