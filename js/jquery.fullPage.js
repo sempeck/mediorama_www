@@ -81,6 +81,8 @@
     var SLIDES_NEXT_SEL =       '.' + SLIDES_NEXT;
     var SLIDES_ARROW_NEXT =     SLIDES_ARROW + ' ' + SLIDES_NEXT;
     var SLIDES_ARROW_NEXT_SEL = SLIDES_ARROW_SEL + SLIDES_NEXT_SEL;
+	
+	var done;
 
     var $window = $(window);
     var $document = $(document);
@@ -600,7 +602,7 @@
                     createSlideArrows(section);
                 }
 
-                if(options.slidesNavigation){
+                if(options.slidesNavigation && !done){
                     addSlidesNavigation(section, numSlides);
                 }
             }
@@ -2096,6 +2098,8 @@
             nav.css('margin-left', '-' + (nav.width()/2) + 'px');
 
             nav.find('li').first().find('a').addClass(ACTIVE);
+			
+			done = true;
         }
 
 

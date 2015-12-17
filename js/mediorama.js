@@ -9,10 +9,11 @@ $(document).ready(function() {
            anchors: ['intro', 'opis', 'projekty', 'kontakt'],
 				menu: '#menu',
 				scrollingSpeed: 1000,
-				slidesNavigation: true,
-				scrollOverflow: true
+			    slidesNavigation: true,
+			//	scrollOverflow: true
         });
 }
+
 		 
     var slides;
    	var v = false;  
@@ -39,3 +40,8 @@ $(document).ready(function() {
 	
 		  
 }); 
+
+
+
+				
+				
