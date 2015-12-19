@@ -1,8 +1,14 @@
 $(document).ready(function() {
 		  
 		   "use strict";
-		
+	
 		$("#menu").load("menu.html");	
+		
+	
+	$("#powrot").click(function(){
+	window.history.back();
+	});
+	
 		
            createFullpage();
 	      
@@ -16,29 +22,18 @@ $(document).ready(function() {
         });
 }
 
-		 
- //   var slides;
-//   	var v = false;  
-//	  
-//        $('img').click(function(){
-//		  slides = $("#fullpage").detach();
-//	      $("#projekt").load("portfolio2.html");	
-//    	  $.fn.fullpage.destroy('all');  
-//	      //   $("body").css("overflow", "scroll");
-//	          v = true; 
-//		});
-//    
-//	
-//	
-//	    $('.nav').click(function(){
-//			if (v) { 
-//              $("#projekt").empty(); 
-//			   // $.fn.fullpage.reBuild();
-//	         $("body").prepend(slides);		 
-//			// $("body").css("overflow", "hidden");
-//			  v = false;
-//			  createFullpage();
-//			}});
+//animacja przejścia
+     window.addEventListener("beforeunload", function () {
+     document.body.classList.add("animate-out");
+});
+
 	
-		  
+// guzik powrotu	
+//	$(window).scroll(function () { 
+//   if ($(window).scrollTop() >= $(document).height() - $(window).height() - 10) {
+//	 $(".powrot").css("display", "block");
+//   }
+//});
+
+	  
 }); 

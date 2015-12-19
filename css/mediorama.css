@@ -47,7 +47,7 @@ caption,th {
 	text-align:center;
 	border-style: solid;
 	border-width: 50px 50px 45px 50px;
-	border-color: #fff;	
+	border-color: #fff;
 }
 
 .slide{
@@ -57,6 +57,15 @@ caption,th {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   }
+  
+  
+  .rama {
+	border-style: solid;
+	border-width: 50px 50px 45px 50px;
+	border-color: #fff;
+	
+	/*padding: 50px 50px 45px 50px;*/
+	}
 
 /* Tekst
  * --------------------------------------- */
@@ -112,6 +121,12 @@ abbr,acronym { border: 0;
 	 float:left;
 	 }
 	 
+.powrot {
+	text-align: center;
+	padding-top: 12px;
+    /*display: none;*/
+	cursor: pointer;
+	}
 
 
 /* Strony
@@ -244,4 +259,25 @@ abbr,acronym { border: 0;
 			}
 	
 	
+/* przejścia
+	* --------------------------------------- */
+.animate-in {
+    -webkit-animation: fadeIn .5s ease-in;
+    animation: fadeIn .5s ease-in;
+}
 
+.animate-out {
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
