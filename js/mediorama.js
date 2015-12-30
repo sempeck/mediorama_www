@@ -1,6 +1,16 @@
 $(document).ready(function() {
-		  
+		
 		   "use strict";
+	
+	$(document).scroll(function () {
+    if ($("body").height() <= ($(window).height() + $(window).scrollTop() + 600)) {
+        $('.znik').show();
+    } else {
+        $('.znik').hide();
+    }
+});
+
+	
 	
 		$("#menu").load("menu.html");	
 		
@@ -14,11 +24,11 @@ $(document).ready(function() {
 	      
 	   function createFullpage() {
         $('#fullpage').fullpage({
-           anchors: ['intro', 'opis', 'projekty', 'kontakt'],
+           anchors: ['opis', 'projekty', 'kontakt'],
 			//	menu: '#menu',
 				scrollingSpeed: 1000,
 			    slidesNavigation: true,
-			//	scrollOverflow: true
+			    //scrollOverflow: true
         });
 }
 
@@ -26,6 +36,9 @@ $(document).ready(function() {
      window.addEventListener("beforeunload", function () {
      document.body.classList.add("animate-out");
 });
+
+
+ 
 
 	
 // guzik powrotu	
