@@ -9,10 +9,8 @@ $(document).ready(function() {
         $('.znik').hide();
     }
 });
-
 	
-	
-		$("#menu").load("menu.html");	
+	$("#menu").load("menu.html");	
 		
 	
 	$("#powrot").click(function(){

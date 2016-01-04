@@ -35,6 +35,7 @@ caption,th {
 /* Struktura
  * --------------------------------------- */
 
+
 .wrap{
 	margin-left: auto;
 	margin-right: auto;
@@ -431,3 +432,9 @@ main {
 	}
 	
 
+.interakcja {/*
+position:relative; *to hold absolute positioned elements**/
+width: 100%; 
+/*height: 768px;*adjust width to suit**/
+border: 0;
+}
