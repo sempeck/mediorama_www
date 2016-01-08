@@ -20,7 +20,7 @@ html.fp-enabled,
 
     /* Touch detection for Windows 8 */
     -ms-touch-action: none;
-a
+
     /* IE 11 on Windows Phone 8.1*/
     touch-action: none;
 }
@@ -98,6 +98,7 @@ a
     top: 50%;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
 }
 #fp-nav.right {
     right: 17px;
