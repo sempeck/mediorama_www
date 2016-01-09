@@ -4,9 +4,9 @@ $(document).ready(function() {
 
     $(document).scroll(function () {
         if ($("body").height() <= ($(window).height() + $(window).scrollTop() + 600)) {
-        $('.znik').show();
+        $('.znik').css("z-index",1);
         } else {
-        $('.znik').hide();
+        $('.znik').css("z-index",-2);
         }
     });
 
