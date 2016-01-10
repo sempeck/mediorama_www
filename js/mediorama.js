@@ -1,6 +1,13 @@
+if(Modernizr.touch) {
+        alert('Witaj. Prace nad mobilną wersją strony wciąż trwają. Zapraszamy wkrótce!');
+        window.location.href = "/temp/";
+    }
+
+
 $(document).ready(function() {
 
     "use strict";
+
 
     $(document).scroll(function () {
         if ($("body").height() <= ($(window).height() + $(window).scrollTop() + 600)) {
