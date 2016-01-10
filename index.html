@@ -122,6 +122,20 @@
 <nav class="navbar navbar-default navbar-fixed-bottom"></nav> -->
 <script src="js/bootstrap.min.js"></script>
 <script src="js/mediorama.js"></script>
+<script> 
+createFullpage();
+
+    function createFullpage() {
+        $('#fullpage').fullpage({
+        anchors: ['opis', 'projekty', 'kontakt'],
+        //	menu: '#menu',
+        scrollingSpeed: 1000,
+        slidesNavigation: true,
+        scrollOverflow: true,
+        animateAnchor: false
+        });
+    }
+</script>
 </body>
 
 
