@@ -30,6 +30,7 @@ caption,th {
     text-align: left;
 }
 
+/* reset -- struktura: ogólnie, poszczególne strony -- animacje -- tekst -- menu -- zdjęcia -- mediaqueries */
 
 /* Struktura
  * --------------------------------------- */
@@ -56,7 +57,6 @@ caption,th {
     transform: translateY(-50%);
   }
   
-  
   .rama {
 	border-style: solid;
 	border-width: 50px 50px 45px 50px;
@@ -73,38 +73,19 @@ h1 {
 	font-weight:100;
 	font-size: 4em;
 	text-transform: uppercase;
-	color:#fff;
 	}
 	
 h2 {
 	font-family: "museo-slab", serif;
 	font-weight:700;
 	font-size: 1.5em;
-	color:#fff;
 	}
 
 p{
 	font-family: "museo-sans", sans-serif;
 	font-weight:300;
 	font-size: 1em;
-	color:#fff;
 }
-
-/*.intro {
-	width: 50%;
-	margin: 0 auto;
-    text-align: left;
-}
-
-q:before,q:after {
-    content:'';
-}
-abbr,acronym { border: 0;
-}*/
-
-.white {
-	color : #ffffff!important;
-	}
 
 .whitep {
 	color : #b2b2b2!important;
@@ -160,21 +141,9 @@ border-style: solid;
 border-width: 10px 10px 0 10px;
 border-color: #ffffff transparent transparent transparent;
 margin: auto;
-
-  -webkit-animation-duration: 3s;
-  -webkit-animation-delay: 4s;
-  -webkit-animation-iteration-count: 3;
-  
-  -moz-animation-duration: 3s;
-  -moz-animation-delay: 4s;
-  -moz-animation-iteration-count: 3;
-  
-   animation-duration: 3s;
-  animation-delay: 4s;
-  animation-iteration-count: 3;
 }
 
-/* Katalog projektów
+/* slider projektów
 		 * --------------------------------------- */
 		
 #section1,
@@ -296,16 +265,6 @@ margin: auto;
 /* parallax.css
 	* --------------------------------------- */
 
-.znik {
-   position:absolute;
-   z-index:-2; /**/
- 
-    }
-    	
-.no-js {
-	padding-top: 106px;
-}
-
 .loading {
 	background: url('/img/ico_loading.gif');
     background-position: center center;
@@ -313,11 +272,10 @@ margin: auto;
 	background-attachment: fixed;
 	height: 100%;
 	width: 100%;
+    z-index: -200;
 }
-section {
-	/*min-width: 960px;*/
-	opacity: 0;
-}
+
+
 .loaded section,
 .no-js section {
 	opacity: 1;
@@ -485,10 +443,72 @@ padding: 0 8%;
     border-color: transparent transparent transparent #fff;
 }
 
+.fp-prev:hover {
+    border-color: transparent #DEDEDE transparent transparent;
+    }
+    
+.fp-next:hover {
+    border-color: transparent transparent transparent #DEDEDE ;
+    }
 
 
-/* media queries
+/* projekty
 	* --------------------------------------- */
+    
+section {
+    text-align: center;    
+    }
+    
+#tytul-str,
+#linki {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);  
+    }
+ 
+ .container2 {
+     z-index: 20;
+     background-color:#fff;
+     width: 100%!important;
+     }   
+    
+/* --------- TEKST ---------- */
+
+    
+.tekst-bialy h1,
+.tekst-bialy h2, 
+.tekst-bialy p {
+    color: #fff;
+    }
+    
+section h2,
+section h1
+         {
+    font-size: 45px;
+    line-height: 48px;
+    margin-bottom: 12px;
+	}
+
+/* -------- ZDJĘCIA --------- */
+
+.parallax-window {
+ background: -webkit-linear-gradient(rgba(76, 53, 95, 0.9),rgba(152, 54, 106, 0.9));
+ background: -moz-linear-gradient(rgba(76, 53, 95, 0.9),rgba(152, 54, 106, 0.9));
+ background: linear-gradient(rgba(76, 53, 95, 0.9),rgba(152, 54, 106, 0.9));
+ overflow:hidden;
+}
+
+.container img {
+    width: 80%;
+    }
+    
+    
+    
+    
+    
+    
+/* media queries
+	* ---------------------------------------
 
 @media (max-width:480px){
   .rama,
@@ -526,4 +546,5 @@ nav.navbar-default.navbar-fixed-bottom {
 #section1 p {
      padding: 0;  
      }
-}
+}*/
+ 

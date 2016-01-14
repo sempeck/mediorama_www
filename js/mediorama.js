@@ -1,24 +1,24 @@
-if(Modernizr.touch) {
-        alert('Witaj. Prace nad mobilną wersją strony wciąż trwają. Zapraszamy wkrótce!');
-        window.location.href = "/temp/";
-    }
-
-
+$("#menu").load("menu.html");	
+ 
 $(document).ready(function() {
 
-    "use strict";
-
-    $(document).scroll(function () {
-        if ($("body").height() <= ($(window).height() + $(window).scrollTop() + 600)) {
-        $('.znik').css("z-index",1);
-        } else {
-        $('.znik').css("z-index",-2);
+        "use strict";
+        
+    function resize() {
+              
+     if (window.location.pathname !== '/') {  
+        var heights = window.innerHeight;
+        document.getElementById("par-window").style.height = heights -95 + "px";
+        document.getElementById("par-window2").style.height = heights -95 + "px";
         }
-    });
+    }
 
-    $("#menu").load("menu.html");	
+    resize();
+    window.onresize = function() {
+        resize();
+        };
 
-//animacja przejścia
+    //animacja przejścia
     window.addEventListener("beforeunload", function () {
     document.body.classList.add("animate-out");
     });
