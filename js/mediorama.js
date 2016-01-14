@@ -1,5 +1,10 @@
 $("#menu").load("menu.html");	
  
+  if(Modernizr.touch) {
+           $('.not-for-mobile').remove();
+   //        $('#par-window').addClass("gradient");
+        }
+          
 $(document).ready(function() {
 
         "use strict";
@@ -15,8 +20,9 @@ $(document).ready(function() {
 
     resize();
     window.onresize = function() {
+        if(!Modernizr.touch) {
         resize();
-        };
+        }};
 
     //animacja przejścia
     window.addEventListener("beforeunload", function () {
