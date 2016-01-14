@@ -94,13 +94,15 @@
     if (navigator.userAgent.match(/(iPod|iPhone|iPad)/)) {
       if (this.imageSrc && this.iosFix && !this.$element.is('img')) {
         this.$element.css({
-          backgroundImage: 'url(' + this.imageSrc + ')',
+              backgroundImage: 'url(' + this.imageSrc + ')',
           backgroundSize: 'cover',
-          backgroundPosition: this.position,
-           background: '-webkit-linear-gradient(rgba(76, 53, 95, 0.9),rgba(152, 54, 106, 0.9))',
- background: '-moz-linear-gradient(rgba(76, 53, 95, 0.9),rgba(152, 54, 106, 0.9))',
- background: 'linear-gradient(rgba(76, 53, 95, 0.9),rgba(152, 54, 106, 0.9))'
+          backgroundPosition: this.position
+        //  backgroundImage: 'url(' + this.imageSrc + ')',
+        //  backgroundSize: 'cover',
+        //  backgroundPosition: this.position,
+        //  background: '-linear-gradient(rgba(76, 53, 95, 0.9),rgba(152, 54, 106, 0.9))'
         });
+        this.$element.addClass("gradient");
       }
       return this;
     }
